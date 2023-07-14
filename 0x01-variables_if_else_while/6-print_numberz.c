@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  * Desription: A program that prints all single digit numbers using putchar
- * Return 0 (Success)
+ * Return: 0 (Success)
  */
 
 int main(void)
