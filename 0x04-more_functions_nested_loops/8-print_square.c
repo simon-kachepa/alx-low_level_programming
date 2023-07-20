@@ -2,7 +2,7 @@
 
 /**
  * print_square - A function that prints a square, followed by a new line.
- * size: The size of the square
+ * @size: size of the square
  * Return: void (Nothing)
  */
 
@@ -11,8 +11,7 @@ void print_square(int size)
 	if (size <= 0)
 	{
 		_putchar('\n');
-	}
-	else
+	} else
 	{
 		int i, j;
 
