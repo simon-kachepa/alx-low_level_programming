@@ -37,11 +37,9 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		{
 			return (-1);
 		}
-		else
-		{
-			ptr = ptr->next;
-			i++;
-		}
+
+		ptr = ptr->next;
+		i++;
 	}
 	tmp = ptr->next;
 	ptr->next = tmp->next;
