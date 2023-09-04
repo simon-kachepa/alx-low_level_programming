@@ -3,7 +3,7 @@
 /**
  * create_file - A function that creates a file
  * @filename: The name of the file
- * @content: The content to be written to the file
+ * @text_content: The content to be written to the file
  * Return: if text_content is NULL create an empty file
  */
 
