@@ -4,14 +4,13 @@
  * append_text_to_file - function that appends text
  * at the end of a file.
  * @filename: he name of the file
- * @text_content: is the NULL terminated string to add
- * at the end of the file
+ * @text_content
  * Return: 1 on success and -1 on failure
  */
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int o, wrt, length;
+	int op, wrt, length;
 
 	if (filename == NULL)
 		return (-1);
@@ -23,13 +22,13 @@ int append_text_to_file(const char *filename, char *text_content)
 			length++;
 	}
 
-	o = open(filename, O_WRONLY | O_APPEND);
-	w = write(o, text_content, len);
+	op = open(filename, O_WRONLY | O_APPEND);
+	wrt = write(op, text_content, length);
 
-	if (o == -1 || w == -1)
+	if (op == -1 || wrt == -1)
 		return (-1);
 
-	close(o);
+	close(op);
 
 	return (1);
 }
