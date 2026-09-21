@@ -35,5 +35,6 @@ char *_strdup(char *str)
 	{
 		cpy_str[index] = str[index];
 	}
+	
 	return (cpy_str);
 }
